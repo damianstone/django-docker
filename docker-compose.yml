@@ -42,3 +42,8 @@ services:
     volumes:
       - redisdata:/data
 
+volumes:
+  web-django:
+  web-static:
+  pgdata:
+  redisdata:
