@@ -23,7 +23,7 @@ EXPOSE 8000
 
 # Start the Django development serverr
 # CMD = command instruction splitted in an array
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "127.0.0.1:8000"]
 
 # to build adding a tag: docker build -t name:tag .
 # to run the build: docker run -p 8000:8000 -d --rm --name django-docker-1 name:tag-build
