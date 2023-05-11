@@ -22,7 +22,6 @@ RUN python manage.py migrate
 EXPOSE 8000
 
 # Start the Django development server
-# CMD = command instruction splitted in an array
 CMD ["python", "manage.py", "runserver", "127.0.0.1:8000"]
 
 # to build adding a tag: docker build -t name:tag .
