@@ -21,7 +21,6 @@ RUN python manage.py migrate
 # Expose port 8000 for the Django app
 EXPOSE 8000
 
-# Start the Django development server
 CMD ["python", "manage.py", "runserver", "127.0.0.1:8000"]
 
 # to build adding a tag: docker build -t name:tag .
