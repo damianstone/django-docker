@@ -4,7 +4,6 @@ FROM python:3.9-slim-buster
 # Set the working directory to /app
 WORKDIR /app
 
-# Just copy the requirements
 COPY requirements.txt /app
 
 # Install any needed packages specified in requirements.txt
