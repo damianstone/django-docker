@@ -7,7 +7,6 @@ COPY requirements.txt /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-# copy the entire code into the image
 # copy the code at the end so docker wont install everything again for the next build
 COPY . /app
 
